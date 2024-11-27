@@ -2,13 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Doto:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Doto:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Doto:wght@100..900&family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&family=Satisfy&family=Shadows+Into+Light&display=swap');
-   
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Doto:wght@100..900&family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&family=Satisfy&family=Sevillana&family=Shadows+Into+Light&display=swap');
+
 *{box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    background: -webkit-linear-gradient( right, #811628, #7d2030,#792e3b, #783d47, #755258);
+    background: linear-gradient( right, #811628, #7d2030,#792e3b, #783d47, #755258);
+    align-items: center;
+    height: 80px;
+}
+
+header h1 {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    font-family: "Sevillana", cursive;
+    font-weight: normal;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
 
 body{
-    background: #ffffff;
+   background: #ffffff;
     font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
@@ -18,9 +36,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #b46234;
+    background: -webkit-linear-gradient( right, #811628, #7d2030,#792e3b, #783d47, #755258);
+    background: linear-gradient( right, #811628, #7d2030,#792e3b, #783d47, #755258);
     width: 100%;
-    margin-top: -80px;
+    margin-top: 0px;
     margin-bottom: 90px;
 }
 
@@ -28,6 +47,7 @@ body{
     display: flex;
     justify-content: center;
     width: 35%;
+    
 }
 
 .box-txt{
@@ -40,10 +60,9 @@ body{
 .box-txt span{
     font-family: "poppins", serif;
     font-size: 70px;
-    color: #000000;
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+   color: #000000;
     transform: translate3d(0.5vmin, -0.5vmin, 0);
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 40px;
     margin-bottom: 20px;
     line-height: 80px;
@@ -51,7 +70,7 @@ body{
 }
 
 .btn-hero {
-    background: #ffffff;
+    background: #5ac80b;
     padding: 10px 25px;
     text-decoration: none;
     font-family: "Poppins", serif;
@@ -66,7 +85,7 @@ body{
 }
 
 .btn-hero:hover{
-    background: #dd8555;
+    background: #5ac80b;
     font-weight: bold;
     color: #ffffff;
 
@@ -91,8 +110,8 @@ body{
     padding: 30px 20px;
     text-align: center;
     border-radius: 50px;
-    border: 3px solid rgb(0, 0, 0);
-    box-shadow: -0.5vmin 0.5vmin 0 #e47c5d;
+    border: 3px solid #000000;
+    box-shadow: -0.5vmin 0.5vmin 0 #811628;
    
     
 }
@@ -115,7 +134,7 @@ body{
 }
 
 .btn-item {
-    background: #ffffff;
+    background: #5ac80b;
     padding: 10px 25px;
     text-decoration: none;
     font-family: "Poppins", serif;
@@ -129,7 +148,7 @@ body{
 }
 
 .btn-item:hover{
-    background: #dd8555;
+    background: #5ac80b;
     color: #ffffff;
 }
 
@@ -163,7 +182,7 @@ body{
     text-align: center;
     border-radius: 50px;
     border: 3px solid rgb(0, 0, 0);
-    box-shadow: -0.5vmin 0.5vmin 0 #e47c5d;
+    box-shadow: -0.5vmin 0.5vmin 0 #811628;
 }
 
 .box-title span{
@@ -175,7 +194,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    font-weight: 500;
+    font-weight: 350;
     margin-top: 90px;
     margin-bottom: 90px;
     line-height: 30px;
@@ -245,8 +264,8 @@ footer{
     align-items: center;
     font-family: "Poppins", serif;
     margin-top: 30px;
-    background: -webkit-linear-gradient( right, #b46234, #c97445,#dd8555, #f19665, #f3a47a);
-    background: linear-gradient( right, #b46234, #c97445,#dd8555, #f19665, #f3a47a);
+    background: -webkit-linear-gradient( right, #811628, #7d2030,#792e3b, #783d47, #755258);
+    background: linear-gradient( right, #811628, #7d2030,#792e3b, #783d47, #755258);
     color: #000000;
     height: 50px;
     font-size: 15px;
@@ -299,6 +318,8 @@ footer{
         text-align: center;
         font-size: 45px;
         line-height: 40px;
+        margin-top: 0px;
+        
     }
 
     img{
@@ -337,6 +358,7 @@ footer{
   
     .box-txt span {
       font-size: 30px;
+      font-weight: 300;
       line-height: 50px;
     }
   
@@ -347,7 +369,8 @@ footer{
 
     .btn-item{
         height: 20px;
-        font-size: 15px;
+        font-weight: 500;
+        font-size: 10px;
     }
 
     .especialidades {
